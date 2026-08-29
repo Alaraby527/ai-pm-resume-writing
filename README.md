@@ -1,0 +1,56 @@
+# ai-pm-resume-writing
+
+ZCode 技能（Skill）：**AI 产品经理简历写作 SOP**。让 AI Agent 读完即可独立为候选人完成 AI 产品经理（AI 应用/Agent、AI 增长、AI 策略/商业化三个方向）简历的撰写、诊断与多版本定制。
+
+## 能做什么
+
+- **JD 解析**：三步挖词法（硬技能/软技能/业务场景）+ 词频统计 + JD-证据映射表
+- **简历诊断**：五级匹配 + HR 10-15 秒扫读逻辑，输出匹配度评分、核心缺口、改写优先级
+- **经历挖掘**：STAR/XYZ 改写，量化 5 法 + 3 种软证据替代，AI 项目按六类证据追问
+- **逐模块撰写**：校招六模块范式（个人评价、实习经历含正反例对照）
+- **多版本定制**：按三大投递方向调整叙事主线与内容取舍
+- **质量把关**：五条红线 + 常见误区 + 29 项成稿自检清单
+
+## 内置铁律（安全底线）
+
+- 不虚构、不篡改、不"合理推测"任何数据；原数据零改动
+- 基于已有简历/模板改写时，**只改文字不动版式**
+- 关键词必须埋进经历证据，禁止在自我评价里空喊能力
+
+## 目录结构
+
+```
+ai-pm-resume-writing/
+├── SKILL.md                              # 工作流程 + 铁律 + 采集清单（常驻，79 行）
+└── references/
+    ├── capability-and-jd.md              # 能力模型、关键词库、JD 解析
+    ├── mining-and-writing.md             # STAR/XYZ、量化、逐模块规范与正反例
+    ├── versions-and-diagnosis.md         # 匹配诊断、多版本策略
+    └── redlines-and-checklist.md         # 红线、避坑、29 项自检清单
+```
+
+## 安装
+
+将本仓库克隆为 ZCode 技能目录下的同名文件夹：
+
+```bash
+# 用户级（所有项目可用）
+git clone https://github.com/Alaraby527/ai-pm-resume-writing.git ~/.zcode/skills/ai-pm-resume-writing
+
+# 或项目级（仅当前项目可用）
+git clone https://github.com/Alaraby527/ai-pm-resume-writing.git <project>/.zcode/skills/ai-pm-resume-writing
+```
+
+## 使用
+
+在 ZCode 中直接用自然语言发起即可自动触发，例如：
+
+- "帮我按这个 JD 改一下简历，岗位是 AI 产品实习生"
+- "这是我现在的简历，帮我看看投 AI 增长方向缺什么"
+- "严格按这份模板帮我填内容，版式别动"
+
+也可以显式调用：`/ai-pm-resume-writing <需求>`。
+
+## 来源
+
+整理自《AI 产品经理简历写作 SOP 指南》v1.0（2026-08）。案例均已脱敏泛化，不含任何候选人个人真实信息。
